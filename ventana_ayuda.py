@@ -1,5 +1,6 @@
 from PySide6.QtWidgets import QDialog, QVBoxLayout, QLabel, QPushButton
 from estadisticas import DEFINICIONES
+from rangos_estadisticas import explicacion_rangos
 
 
 class VentanaAyudaStats(QDialog):
@@ -24,6 +25,9 @@ class VentanaAyudaStats(QDialog):
         aviso.setWordWrap(True)
         aviso.setStyleSheet("color: #aaaaaa;")
         layout.addWidget(aviso)
+        rangos = QLabel(explicacion_rangos(clave))
+        rangos.setWordWrap(True)
+        layout.addWidget(rangos)
         boton = QPushButton("Entendido")
         boton.clicked.connect(self.accept)
         layout.addWidget(boton)

@@ -122,6 +122,7 @@ class ControlMesa:
         self.fichas_bote.actualizar_bote(m.bote)
         self.lbl_nombre_propio.setText(f"[{h.posicion}] {h.nombre} (Tú)")
         self.lbl_fichas_propias.setText(f"{h.fichas:,}")
+        self._actualizar_asiento(self.HEROE, self.panel_mio, self.lbl_apuesta_propia)
         cv.limpiar_layout(self.layout_centro)
         self._mostrar_cartas(self.layout_centro, m.comunitarias, 65, 95)
         for visual, asiento in enumerate(self.ASIENTOS_BOTS):
@@ -134,8 +135,7 @@ class ControlMesa:
             color = "#666666" if j.retirado or not j.participando else ("#ffd700" if m.turno == asiento else "#00ffcc")
             perfil["nombre"].setStyleSheet(f"color: {color}; border: none; background: transparent;")
             etiqueta = self.lbl_apuestas_bots[visual]
-            etiqueta.setText(j.accion)
-            etiqueta.setVisible(bool(j.accion))
+            self._actualizar_asiento(asiento, perfil["panel"], etiqueta)
             for lbl, carta in zip(perfil.get("cartas", []), j.cartas):
                 ruta = cv.obtener_ruta_imagen_carta(carta) if m.terminada and m.showdown and not j.retirado else cv.ruta_reverso()
                 lbl.setPixmap(QPixmap(ruta).scaled(40, 58, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation))
@@ -151,7 +151,8 @@ class ControlMesa:
             self._guardar_sesion()
         elif m.turno is not None and m.turno != self.HEROE:
             self.lbl_hud_consejo.setText(f"Turno de {m.jugadores[m.turno].nombre}…")
-            self.timer_bot.start(450)
+            if self.tabs.currentWidget() is self.tab_mesa:
+                self.timer_bot.start(450)
         elif m.turno == self.HEROE:
             deuda = min(m.por_pagar(self.HEROE), h.fichas)
             self.lbl_hud_consejo.setText(f"Tu turno · Aportado en esta calle: {h.apuesta}. " +
@@ -160,7 +161,23 @@ class ControlMesa:
             siguiente = "el resultado" if m.fase == 3 else m.CALLES[m.fase + 1]
             self.lbl_hud_consejo.setText(f"Apuestas cerradas. Mostrando {siguiente}…")
             self.transicion_calle = (m.id_mano, m.fase)
-            self.timer_calle.start(self.PAUSA_CALLE_MS)
+            if self.tabs.currentWidget() is self.tab_mesa:
+                self.timer_calle.start(self.PAUSA_CALLE_MS)
+
+    def _actualizar_asiento(self, asiento, panel, etiqueta):
+        m = self.motor
+        j = m.jugadores[asiento]
+        activo = not m.terminada and m.turno == asiento
+        color = "#ffd700" if activo else "#555555"
+        panel.setStyleSheet(f"background-color: rgba(30,30,30,230); border: 2px solid {color}; border-radius: 8px; padding: 5px;")
+        estado = ("TU TURNO" if asiento == self.HEROE else "SU TURNO") if activo else j.accion
+        if m.terminada:
+            estado = "Mano terminada"
+        importe = 0 if m.terminada else j.apuesta
+        etiqueta.setText(f"{estado or 'Esperando'}\nEn esta calle: {importe:,}")
+        etiqueta.setToolTip("Total aportado en la ronda de apuestas actual. Ya está incluido en el bote.\nÚltima acción: " + (j.accion or "Ninguna"))
+        etiqueta.setStyleSheet(f"color: {'#ffd700' if activo else '#dddddd'}; background-color: rgba(15,15,15,220); border: 1px solid {color}; border-radius: 4px; font: 11px 'Segoe UI';")
+        etiqueta.setVisible(j.participando)
 
     def _avanzar_calle_automatica(self):
         m = self.motor

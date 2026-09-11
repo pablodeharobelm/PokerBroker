@@ -17,6 +17,7 @@ from control_mesa import ControlMesa
 from equity import ServicioEquity
 from sesion_guardada import ArchivoSesion
 from pathlib import Path
+from interfaz_inicio import crear_inicio
 
 class VentanaMesaPoker(ControlMesa, QMainWindow):
     def __init__(self):
@@ -56,14 +57,21 @@ class VentanaMesaPoker(ControlMesa, QMainWindow):
         self.tab_stats = QWidget()
         self.tab_historial = QWidget()
 
-        self.tabs.addTab(self.tab_mesa, "🃏 MESA DE JUEGO")
-        self.tabs.addTab(self.tab_stats, "📊 ESTADÍSTICAS PERFIL")
-        self.tabs.addTab(self.tab_historial, "HISTORIAL DE MANOS")
+        destinos = {"mesa": self.tab_mesa, "stats": self.tab_stats, "historial": self.tab_historial}
+        self.tab_inicio = crear_inicio(lambda destino: self.tabs.setCurrentWidget(destinos[destino]))
+        self.tabs.addTab(self.tab_inicio, "PokerBroker · Inicio")
+        self.tabs.addTab(self.tab_mesa, "Mesa de práctica")
+        self.tabs.addTab(self.tab_stats, "Estadísticas")
+        self.tabs.addTab(self.tab_historial, "Historial")
 
         self.init_ui()
         self.init_stats_ui()
         self.construir_asientos()
         self.iniciar_nueva_mano()
+        self.tabs.currentChanged.connect(self._cambiar_seccion)
+
+    def _cambiar_seccion(self, _indice):
+        self._refrescar_mesa()
 
     def init_ui(self):
         """Distribuye la interfaz visual dividiendo el panel inferior en dos columnas laterales."""
@@ -279,13 +287,18 @@ class VentanaMesaPoker(ControlMesa, QMainWindow):
     def construir_asientos(self):
         """Inicializa las referencias de los perfiles y crea los letreros de apuestas flotantes."""
         self.lbl_apuestas_bots = {}
+        self.lbl_apuesta_propia = QLabel("", self.tab_mesa)
+        self.lbl_apuesta_propia.setGeometry(330, 380, 150, 42)
+        self.lbl_apuesta_propia.setAlignment(Qt.AlignmentFlag.AlignCenter)
         for i, r in enumerate(self.datos_rivales):
             etiquetas = cv.crear_cuadro_perfil(self.tab_mesa, r["nombre"], r["fichas"], r["x"], r["y"])
             self.asientos_visuales[i] = etiquetas
 
             lbl_apuesta = QLabel("", self.tab_mesa)
-            lbl_apuesta.setFixedSize(110, 22)
-            lbl_apuesta.move(r["x"] + 15, r["y"] + 55)
+            lbl_apuesta.setFixedSize(150, 42)
+            lbl_apuesta.move(r["x"] - 5, r["y"] + 58)
+            if i == 0:
+                lbl_apuesta.move(r["x"] + 150, r["y"] + 5)
             lbl_apuesta.setAlignment(Qt.AlignmentFlag.AlignCenter)
             lbl_apuesta.setFont(QFont("Segoe UI", 9, QFont.Weight.Bold))
             lbl_apuesta.setStyleSheet("color: #00ffcc; background-color: rgba(15, 15, 15, 220); border: 1px solid #333333; border-radius: 4px;")

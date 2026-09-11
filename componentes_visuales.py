@@ -64,7 +64,7 @@ def crear_cuadro_perfil(parent, nombre, fichas, x, y):
     layout.addWidget(lbl_fichas)
     panel.move(x, y)
 
-    return {"nombre": lbl_nombre, "fichas": lbl_fichas, "cartas": cartas_visuales}
+    return {"panel": panel, "nombre": lbl_nombre, "fichas": lbl_fichas, "cartas": cartas_visuales}
 
 def limpiar_layout(layout):
     if layout is not None:

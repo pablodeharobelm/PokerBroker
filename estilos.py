@@ -1,7 +1,7 @@
 ESTILO_BOTE = """
-    color: #FFD700; 
+    color: #cfb477; 
     background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #2a2a2a, stop:1 #141414); 
-    border: 1px solid #FFD700;
+    border: 1px solid #cfb477;
     border-radius: 12px;
 """
 
@@ -38,12 +38,12 @@ ESTILO_SLIDER = """
 
 ESTILO_BOTONES_ACCION = """
     QPushButton { 
-        background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #d62229, stop:1 #9b1116); 
+        background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #943b40, stop:1 #66292f); 
         color: white; font-family: 'Segoe UI'; font-weight: bold; font-size: 14px; 
         border: 1px solid #5a0508; border-radius: 6px; padding: 10px 30px; min-width: 100px; 
     }
     QPushButton:hover { 
-        background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #eb3239, stop:1 #b5161c); 
+        background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #a34b50, stop:1 #793039); 
     }
 """
 ESTILO_PESTANAS = """
@@ -68,8 +68,8 @@ ESTILO_PESTANAS = """
     }
     QTabBar::tab:selected {
         background-color: #1a1a1a;
-        color: #00ffcc;
-        border-bottom: 2px solid #00ffcc;
+        color: #cfb477;
+        border-bottom: 2px solid #cfb477;
     }
 """
 
@@ -96,7 +96,7 @@ ESTILO_PROGRESS_BAR = """
         text-align: transparent;
     }
     QProgressBar::chunk {
-        background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #ff007f, stop:1 #00ffcc);
+        background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #ff007f, stop:1 #cfb477);
         border-radius: 3px;
     }
 """

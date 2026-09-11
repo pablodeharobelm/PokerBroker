@@ -30,6 +30,7 @@ class InterfazTests(unittest.TestCase):
         with patch("main.BaseDatosLocal", return_value=self.bd):
             self.ventana = VentanaMesaPoker()
         self.ventana.motor.rng = random.Random(19)
+        self.ventana.tabs.setCurrentWidget(self.ventana.tab_mesa)
         self.ventana.show()
         self.app.processEvents()
         self.ventana.timer_bot.stop()
@@ -91,6 +92,20 @@ class InterfazTests(unittest.TestCase):
         v.timer_bot.stop()
         self.assertGreaterEqual(len(v.motor.eventos), 2)
         self.assertEqual(v.motor.eventos[1]["jugador"], 4)
+
+    def test_menu_pausa_y_reanuda_la_mesa(self):
+        v = self.ventana
+        v.chk_ayudas.setChecked(False)
+        v.avanzar_fase_juego()
+        estado = (v.motor.id_mano, v.motor.turno, len(v.motor.eventos))
+        v.tabs.setCurrentWidget(v.tab_inicio)
+        self.assertFalse(v.timer_bot.isActive())
+        self.assertFalse(v.timer_calle.isActive())
+        QTest.qWait(500)
+        self.assertEqual(estado, (v.motor.id_mano, v.motor.turno, len(v.motor.eventos)))
+        v.tabs.setCurrentWidget(v.tab_mesa)
+        self.assertTrue(v.timer_bot.isActive())
+        v.timer_bot.stop()
 
     def test_fold_no_registra_dos_veces(self):
         v = self.ventana

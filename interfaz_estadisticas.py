@@ -15,8 +15,9 @@ def preparar_panel(panel):
             widget.hide()
             widget.setParent(None)
             widget.deleteLater()
-    layout.setContentsMargins(20, 16, 20, 16)
-    panel.setStyleSheet("background: #121212; color: #eeeeee;")
+    layout.setContentsMargins(32, 24, 32, 24)
+    layout.setSpacing(16)
+    panel.setStyleSheet("QWidget { background: #101512; color: #efe6d2; font-family: 'Segoe UI'; } QPushButton { background: #244333; border: 1px solid #465139; border-radius: 6px; padding: 10px; } QPushButton:hover { background: #2d4853; }")
     return layout
 
 
@@ -30,19 +31,17 @@ def refrescar_interfaz_estadisticas(tab_stats, bd_local):
         layout.addWidget(aviso)
         return
     stats = calcular_estadisticas(datos["manos"])
-    titulo = QLabel("ESTADÍSTICAS DE TUS NUEVAS MANOS")
-    titulo.setStyleSheet("font-size: 18px; font-weight: bold;")
+    titulo = QLabel("Estadísticas")
+    titulo.setStyleSheet("font-size: 30px; font-weight: bold;")
     layout.addWidget(titulo)
-    resumen = QLabel(f"{stats['manos']} manos completas · Balance de práctica: {stats['balance']:+,} fichas")
+    resumen = QLabel(f"{stats['manos']:,} {'mano' if stats['manos'] == 1 else 'manos'}     /     {stats['balance']:+,} fichas")
     resumen.setObjectName("resumen_estadisticas")
+    resumen.setStyleSheet("background: #17392e; border: 1px solid #465139; border-radius: 10px; padding: 20px; color: #cfb477; font-size: 18px;")
     layout.addWidget(resumen)
     antiguo = datos.get("historial_anterior")
     if antiguo is not None:
-        aviso = QLabel(f"Conservamos {antiguo['manos_totales']:,} manos del historial anterior. Sus contadores no se mezclan con estas estadísticas porque no incluyen las acciones necesarias para recalcularlos.")
-        aviso.setWordWrap(True)
-        aviso.setStyleSheet("color: #dfc17c;")
-        layout.addWidget(aviso)
-        boton = QPushButton("Consultar contadores anteriores")
+        boton = QPushButton("Archivo anterior")
+        boton.setToolTip(f"{antiguo['manos_totales']:,} manos antiguas conservadas, excluidas de estas métricas porque no incluyen las acciones necesarias.")
         def mostrar_anteriores():
             dialogo = QDialog(tab_stats)
             dialogo.setWindowTitle("Historial anterior · contadores sin recalcular")
@@ -65,7 +64,7 @@ def refrescar_interfaz_estadisticas(tab_stats, bd_local):
         grid.addWidget(crear_tarjeta_stat_global(clave, metrica), indice // 4, indice % 4)
     scroll.setWidget(contenedor)
     layout.addWidget(scroll, 1)
-    lectura = QLabel("Pulsa una métrica para ver su fórmula. Cada tarjeta muestra los casos y la base del cálculo. Sin oportunidades se muestra ‘Sin datos’. La muestra describe tu juego; no asigna una nota de habilidad.")
+    lectura = QLabel("Tramos orientativos, no notas: más alto no siempre es mejor. Pulsa para interpretar cada métrica.")
     lectura.setWordWrap(True)
     lectura.setStyleSheet("color: #aaaaaa;")
     layout.addWidget(lectura)

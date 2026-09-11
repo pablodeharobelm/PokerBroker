@@ -30,6 +30,20 @@ se queda sin ellas o queda un solo participante con fichas. No borra el historia
 
 ## Organización
 
+Las estadísticas usan barras de tres tramos descriptivos, con marcador del
+porcentaje real. No representan una nota ni una estrategia óptima. Los cortes
+son convenciones educativas; los folds por calle son frente a cualquier apuesta,
+no fold-to-cbet. Se muestra «Poca muestra» por debajo de 100 oportunidades como
+aviso de interfaz, no como umbral estadístico de fiabilidad. Al pulsar una tarjeta
+se explican los intervalos y las limitaciones. Referencias conceptuales:
+[guía de estadísticas de PokerStars](https://www.pokerstars.es/poker/news/news/estadisticas-hud-poker-perfilar-rivales/)
+y [definiciones de PokerTracker](https://www.pokertracker.com/guides/PT3/general/statistical-reference-guide).
+
+La aplicación abre en el menú Inicio, con accesos a la práctica, estadísticas
+y al historial. Salir de la mesa pausa los turnos automáticos locales; volver
+los reanuda. El acceso online está desactivado: el multijugador aún no está
+implementado. Los datos y la sesión se guardan en el equipo actual.
+
 - `main.py`: construcción de la ventana y sus controles.
 - `control_mesa.py`: eventos de Qt, turnos automáticos de bots y actualización visual.
 - `motor_mesa.py`: jugadores, ciegas, turnos, apuestas, all-in, botes y pagos.

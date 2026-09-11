@@ -6233,7 +6233,1364 @@
           ]
         }
       ]
+    },
+    {
+      "id": "327b92ea-b206-4ce1-af75-fbf99a1adcae",
+      "inicio": "2026-09-11T14:27:42.379236+00:00",
+      "fin": "2026-09-11T14:31:43.479255+00:00",
+      "heroe": 3,
+      "dealer": 0,
+      "sb": 20,
+      "bb": 40,
+      "jugadores": [
+        {
+          "asiento": 0,
+          "nombre": "peco246",
+          "posicion": "BTN",
+          "participando": true,
+          "perfil": "conservador",
+          "cartas": [
+            "3D",
+            "6D"
+          ],
+          "fichas_iniciales": 6960,
+          "fichas_finales": 6960,
+          "aportado": 0,
+          "retirado": true,
+          "premio": 0,
+          "devuelto": 0
+        },
+        {
+          "asiento": 1,
+          "nombre": "Breta232",
+          "posicion": "SB",
+          "participando": true,
+          "perfil": "pagador",
+          "cartas": [
+            "KH",
+            "9C"
+          ],
+          "fichas_iniciales": 9781,
+          "fichas_finales": 7856,
+          "aportado": 1925,
+          "retirado": false,
+          "premio": 0,
+          "devuelto": 0
+        },
+        {
+          "asiento": 2,
+          "nombre": "Davidkim",
+          "posicion": "BB",
+          "participando": true,
+          "perfil": "agresivo",
+          "cartas": [
+            "10C",
+            "JC"
+          ],
+          "fichas_iniciales": 10624,
+          "fichas_finales": 9129,
+          "aportado": 1925,
+          "retirado": false,
+          "premio": 430,
+          "devuelto": 0
+        },
+        {
+          "asiento": 3,
+          "nombre": "Finwa22",
+          "posicion": "UTG",
+          "participando": true,
+          "perfil": null,
+          "cartas": [
+            "10H",
+            "2D"
+          ],
+          "fichas_iniciales": 1710,
+          "fichas_finales": 5270,
+          "aportado": 1710,
+          "retirado": false,
+          "premio": 5270,
+          "devuelto": 0
+        },
+        {
+          "asiento": 4,
+          "nombre": "_Yurec0816",
+          "posicion": "MP",
+          "participando": true,
+          "perfil": "equilibrado",
+          "cartas": [
+            "5C",
+            "8S"
+          ],
+          "fichas_iniciales": 3500,
+          "fichas_finales": 3500,
+          "aportado": 0,
+          "retirado": true,
+          "premio": 0,
+          "devuelto": 0
+        },
+        {
+          "asiento": 5,
+          "nombre": "FAKEL382",
+          "posicion": "CO",
+          "participando": true,
+          "perfil": "agresivo",
+          "cartas": [
+            "AH",
+            "5D"
+          ],
+          "fichas_iniciales": 10356,
+          "fichas_finales": 10216,
+          "aportado": 140,
+          "retirado": true,
+          "premio": 0,
+          "devuelto": 0
+        }
+      ],
+      "mesa": [
+        "7H",
+        "7D",
+        "8D",
+        "9D",
+        "AD"
+      ],
+      "ciegas": [
+        {
+          "jugador": 1,
+          "cantidad": 20,
+          "tipo": "SB"
+        },
+        {
+          "jugador": 2,
+          "cantidad": 40,
+          "tipo": "BB"
+        }
+      ],
+      "acciones": [
+        {
+          "jugador": 3,
+          "fase": 0,
+          "accion": "call",
+          "cantidad": 40,
+          "subidas_previas": 0,
+          "por_pagar": 40,
+          "podia_subir": true,
+          "bote_previo": 60,
+          "bote_despues": 100,
+          "total_calle": 40,
+          "fichas_restantes": 1670,
+          "all_in": false
+        },
+        {
+          "jugador": 4,
+          "fase": 0,
+          "accion": "fold",
+          "cantidad": 0,
+          "subidas_previas": 0,
+          "por_pagar": 40,
+          "podia_subir": true,
+          "bote_previo": 100,
+          "bote_despues": 100,
+          "total_calle": 0,
+          "fichas_restantes": 3500,
+          "all_in": false
+        },
+        {
+          "jugador": 5,
+          "fase": 0,
+          "accion": "raise",
+          "cantidad": 140,
+          "subidas_previas": 0,
+          "por_pagar": 40,
+          "podia_subir": true,
+          "bote_previo": 100,
+          "bote_despues": 240,
+          "total_calle": 140,
+          "fichas_restantes": 10216,
+          "all_in": false
+        },
+        {
+          "jugador": 0,
+          "fase": 0,
+          "accion": "fold",
+          "cantidad": 0,
+          "subidas_previas": 1,
+          "por_pagar": 140,
+          "podia_subir": true,
+          "bote_previo": 240,
+          "bote_despues": 240,
+          "total_calle": 0,
+          "fichas_restantes": 6960,
+          "all_in": false
+        },
+        {
+          "jugador": 1,
+          "fase": 0,
+          "accion": "call",
+          "cantidad": 120,
+          "subidas_previas": 1,
+          "por_pagar": 120,
+          "podia_subir": true,
+          "bote_previo": 240,
+          "bote_despues": 360,
+          "total_calle": 140,
+          "fichas_restantes": 9641,
+          "all_in": false
+        },
+        {
+          "jugador": 2,
+          "fase": 0,
+          "accion": "call",
+          "cantidad": 100,
+          "subidas_previas": 1,
+          "por_pagar": 100,
+          "podia_subir": true,
+          "bote_previo": 360,
+          "bote_despues": 460,
+          "total_calle": 140,
+          "fichas_restantes": 10484,
+          "all_in": false
+        },
+        {
+          "jugador": 3,
+          "fase": 0,
+          "accion": "call",
+          "cantidad": 100,
+          "subidas_previas": 1,
+          "por_pagar": 100,
+          "podia_subir": true,
+          "bote_previo": 460,
+          "bote_despues": 560,
+          "total_calle": 140,
+          "fichas_restantes": 1570,
+          "all_in": false
+        },
+        {
+          "jugador": 1,
+          "fase": 1,
+          "accion": "check",
+          "cantidad": 0,
+          "subidas_previas": 1,
+          "por_pagar": 0,
+          "podia_subir": true,
+          "bote_previo": 560,
+          "bote_despues": 560,
+          "total_calle": 0,
+          "fichas_restantes": 9641,
+          "all_in": false
+        },
+        {
+          "jugador": 2,
+          "fase": 1,
+          "accion": "check",
+          "cantidad": 0,
+          "subidas_previas": 1,
+          "por_pagar": 0,
+          "podia_subir": true,
+          "bote_previo": 560,
+          "bote_despues": 560,
+          "total_calle": 0,
+          "fichas_restantes": 10484,
+          "all_in": false
+        },
+        {
+          "jugador": 3,
+          "fase": 1,
+          "accion": "check",
+          "cantidad": 0,
+          "subidas_previas": 1,
+          "por_pagar": 0,
+          "podia_subir": true,
+          "bote_previo": 560,
+          "bote_despues": 560,
+          "total_calle": 0,
+          "fichas_restantes": 1570,
+          "all_in": false
+        },
+        {
+          "jugador": 5,
+          "fase": 1,
+          "accion": "check",
+          "cantidad": 0,
+          "subidas_previas": 1,
+          "por_pagar": 0,
+          "podia_subir": true,
+          "bote_previo": 560,
+          "bote_despues": 560,
+          "total_calle": 0,
+          "fichas_restantes": 10216,
+          "all_in": false
+        },
+        {
+          "jugador": 1,
+          "fase": 2,
+          "accion": "check",
+          "cantidad": 0,
+          "subidas_previas": 1,
+          "por_pagar": 0,
+          "podia_subir": true,
+          "bote_previo": 560,
+          "bote_despues": 560,
+          "total_calle": 0,
+          "fichas_restantes": 9641,
+          "all_in": false
+        },
+        {
+          "jugador": 2,
+          "fase": 2,
+          "accion": "raise",
+          "cantidad": 420,
+          "subidas_previas": 1,
+          "por_pagar": 0,
+          "podia_subir": true,
+          "bote_previo": 560,
+          "bote_despues": 980,
+          "total_calle": 420,
+          "fichas_restantes": 10064,
+          "all_in": false
+        },
+        {
+          "jugador": 3,
+          "fase": 2,
+          "accion": "call",
+          "cantidad": 420,
+          "subidas_previas": 1,
+          "por_pagar": 420,
+          "podia_subir": true,
+          "bote_previo": 980,
+          "bote_despues": 1400,
+          "total_calle": 420,
+          "fichas_restantes": 1150,
+          "all_in": false
+        },
+        {
+          "jugador": 5,
+          "fase": 2,
+          "accion": "fold",
+          "cantidad": 0,
+          "subidas_previas": 1,
+          "por_pagar": 420,
+          "podia_subir": true,
+          "bote_previo": 1400,
+          "bote_despues": 1400,
+          "total_calle": 0,
+          "fichas_restantes": 10216,
+          "all_in": false
+        },
+        {
+          "jugador": 1,
+          "fase": 2,
+          "accion": "call",
+          "cantidad": 420,
+          "subidas_previas": 1,
+          "por_pagar": 420,
+          "podia_subir": true,
+          "bote_previo": 1400,
+          "bote_despues": 1820,
+          "total_calle": 420,
+          "fichas_restantes": 9221,
+          "all_in": false
+        },
+        {
+          "jugador": 1,
+          "fase": 3,
+          "accion": "check",
+          "cantidad": 0,
+          "subidas_previas": 1,
+          "por_pagar": 0,
+          "podia_subir": true,
+          "bote_previo": 1820,
+          "bote_despues": 1820,
+          "total_calle": 0,
+          "fichas_restantes": 9221,
+          "all_in": false
+        },
+        {
+          "jugador": 2,
+          "fase": 3,
+          "accion": "raise",
+          "cantidad": 1365,
+          "subidas_previas": 1,
+          "por_pagar": 0,
+          "podia_subir": true,
+          "bote_previo": 1820,
+          "bote_despues": 3185,
+          "total_calle": 1365,
+          "fichas_restantes": 8699,
+          "all_in": false
+        },
+        {
+          "jugador": 3,
+          "fase": 3,
+          "accion": "call",
+          "cantidad": 1150,
+          "subidas_previas": 1,
+          "por_pagar": 1365,
+          "podia_subir": false,
+          "bote_previo": 3185,
+          "bote_despues": 4335,
+          "total_calle": 1150,
+          "fichas_restantes": 0,
+          "all_in": true
+        },
+        {
+          "jugador": 1,
+          "fase": 3,
+          "accion": "call",
+          "cantidad": 1365,
+          "subidas_previas": 1,
+          "por_pagar": 1365,
+          "podia_subir": true,
+          "bote_previo": 4335,
+          "bote_despues": 5700,
+          "total_calle": 1365,
+          "fichas_restantes": 7856,
+          "all_in": false
+        }
+      ],
+      "showdown": true,
+      "vieron_flop": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "botes": [
+        {
+          "cantidad": 560,
+          "ganadores": [
+            3
+          ]
+        },
+        {
+          "cantidad": 4710,
+          "ganadores": [
+            3
+          ]
+        },
+        {
+          "cantidad": 430,
+          "ganadores": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "25565023-3e6c-4053-9e7e-77999bd68cca",
+      "inicio": "2026-09-11T14:31:47.675168+00:00",
+      "fin": "2026-09-11T14:32:02.969355+00:00",
+      "heroe": 3,
+      "dealer": 1,
+      "sb": 20,
+      "bb": 40,
+      "jugadores": [
+        {
+          "asiento": 0,
+          "nombre": "peco246",
+          "posicion": "CO",
+          "participando": true,
+          "perfil": "conservador",
+          "cartas": [
+            "3C",
+            "AD"
+          ],
+          "fichas_iniciales": 6960,
+          "fichas_finales": 6960,
+          "aportado": 0,
+          "retirado": true,
+          "premio": 0,
+          "devuelto": 0
+        },
+        {
+          "asiento": 1,
+          "nombre": "Breta232",
+          "posicion": "BTN",
+          "participando": true,
+          "perfil": "pagador",
+          "cartas": [
+            "JD",
+            "KC"
+          ],
+          "fichas_iniciales": 7856,
+          "fichas_finales": 7776,
+          "aportado": 80,
+          "retirado": true,
+          "premio": 0,
+          "devuelto": 0
+        },
+        {
+          "asiento": 2,
+          "nombre": "Davidkim",
+          "posicion": "SB",
+          "participando": true,
+          "perfil": "agresivo",
+          "cartas": [
+            "8H",
+            "2C"
+          ],
+          "fichas_iniciales": 9129,
+          "fichas_finales": 9109,
+          "aportado": 20,
+          "retirado": true,
+          "premio": 0,
+          "devuelto": 0
+        },
+        {
+          "asiento": 3,
+          "nombre": "Finwa22",
+          "posicion": "BB",
+          "participando": true,
+          "perfil": null,
+          "cartas": [
+            "QC",
+            "QH"
+          ],
+          "fichas_iniciales": 5270,
+          "fichas_finales": 5370,
+          "aportado": 170,
+          "retirado": false,
+          "premio": 180,
+          "devuelto": 90
+        },
+        {
+          "asiento": 4,
+          "nombre": "_Yurec0816",
+          "posicion": "UTG",
+          "participando": true,
+          "perfil": "equilibrado",
+          "cartas": [
+            "3H",
+            "5D"
+          ],
+          "fichas_iniciales": 3500,
+          "fichas_finales": 3500,
+          "aportado": 0,
+          "retirado": true,
+          "premio": 0,
+          "devuelto": 0
+        },
+        {
+          "asiento": 5,
+          "nombre": "FAKEL382",
+          "posicion": "MP",
+          "participando": true,
+          "perfil": "agresivo",
+          "cartas": [
+            "6S",
+            "JS"
+          ],
+          "fichas_iniciales": 10216,
+          "fichas_finales": 10216,
+          "aportado": 0,
+          "retirado": true,
+          "premio": 0,
+          "devuelto": 0
+        }
+      ],
+      "mesa": [
+        "4C",
+        "4H",
+        "2D"
+      ],
+      "ciegas": [
+        {
+          "jugador": 2,
+          "cantidad": 20,
+          "tipo": "SB"
+        },
+        {
+          "jugador": 3,
+          "cantidad": 40,
+          "tipo": "BB"
+        }
+      ],
+      "acciones": [
+        {
+          "jugador": 4,
+          "fase": 0,
+          "accion": "fold",
+          "cantidad": 0,
+          "subidas_previas": 0,
+          "por_pagar": 40,
+          "podia_subir": true,
+          "bote_previo": 60,
+          "bote_despues": 60,
+          "total_calle": 0,
+          "fichas_restantes": 3500,
+          "all_in": false
+        },
+        {
+          "jugador": 5,
+          "fase": 0,
+          "accion": "fold",
+          "cantidad": 0,
+          "subidas_previas": 0,
+          "por_pagar": 40,
+          "podia_subir": true,
+          "bote_previo": 60,
+          "bote_despues": 60,
+          "total_calle": 0,
+          "fichas_restantes": 10216,
+          "all_in": false
+        },
+        {
+          "jugador": 0,
+          "fase": 0,
+          "accion": "fold",
+          "cantidad": 0,
+          "subidas_previas": 0,
+          "por_pagar": 40,
+          "podia_subir": true,
+          "bote_previo": 60,
+          "bote_despues": 60,
+          "total_calle": 0,
+          "fichas_restantes": 6960,
+          "all_in": false
+        },
+        {
+          "jugador": 1,
+          "fase": 0,
+          "accion": "call",
+          "cantidad": 40,
+          "subidas_previas": 0,
+          "por_pagar": 40,
+          "podia_subir": true,
+          "bote_previo": 60,
+          "bote_despues": 100,
+          "total_calle": 40,
+          "fichas_restantes": 7816,
+          "all_in": false
+        },
+        {
+          "jugador": 2,
+          "fase": 0,
+          "accion": "fold",
+          "cantidad": 0,
+          "subidas_previas": 0,
+          "por_pagar": 20,
+          "podia_subir": true,
+          "bote_previo": 100,
+          "bote_despues": 100,
+          "total_calle": 20,
+          "fichas_restantes": 9109,
+          "all_in": false
+        },
+        {
+          "jugador": 3,
+          "fase": 0,
+          "accion": "raise",
+          "cantidad": 40,
+          "subidas_previas": 0,
+          "por_pagar": 0,
+          "podia_subir": true,
+          "bote_previo": 100,
+          "bote_despues": 140,
+          "total_calle": 80,
+          "fichas_restantes": 5190,
+          "all_in": false
+        },
+        {
+          "jugador": 1,
+          "fase": 0,
+          "accion": "call",
+          "cantidad": 40,
+          "subidas_previas": 1,
+          "por_pagar": 40,
+          "podia_subir": true,
+          "bote_previo": 140,
+          "bote_despues": 180,
+          "total_calle": 80,
+          "fichas_restantes": 7776,
+          "all_in": false
+        },
+        {
+          "jugador": 3,
+          "fase": 1,
+          "accion": "raise",
+          "cantidad": 90,
+          "subidas_previas": 1,
+          "por_pagar": 0,
+          "podia_subir": true,
+          "bote_previo": 180,
+          "bote_despues": 270,
+          "total_calle": 90,
+          "fichas_restantes": 5100,
+          "all_in": false
+        },
+        {
+          "jugador": 1,
+          "fase": 1,
+          "accion": "fold",
+          "cantidad": 0,
+          "subidas_previas": 1,
+          "por_pagar": 90,
+          "podia_subir": true,
+          "bote_previo": 270,
+          "bote_despues": 270,
+          "total_calle": 0,
+          "fichas_restantes": 7776,
+          "all_in": false
+        }
+      ],
+      "showdown": false,
+      "vieron_flop": [
+        1,
+        3
+      ],
+      "botes": [
+        {
+          "cantidad": 60,
+          "ganadores": [
+            3
+          ]
+        },
+        {
+          "cantidad": 120,
+          "ganadores": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "88f1d995-3180-4db6-ab5a-47fbfe87b27c",
+      "inicio": "2026-09-11T14:32:07.946541+00:00",
+      "fin": "2026-09-11T14:32:15.727451+00:00",
+      "heroe": 3,
+      "dealer": 2,
+      "sb": 20,
+      "bb": 40,
+      "jugadores": [
+        {
+          "asiento": 0,
+          "nombre": "peco246",
+          "posicion": "MP",
+          "participando": true,
+          "perfil": "conservador",
+          "cartas": [
+            "5S",
+            "AS"
+          ],
+          "fichas_iniciales": 6960,
+          "fichas_finales": 6960,
+          "aportado": 0,
+          "retirado": true,
+          "premio": 0,
+          "devuelto": 0
+        },
+        {
+          "asiento": 1,
+          "nombre": "Breta232",
+          "posicion": "CO",
+          "participando": true,
+          "perfil": "pagador",
+          "cartas": [
+            "4D",
+            "3S"
+          ],
+          "fichas_iniciales": 7776,
+          "fichas_finales": 7736,
+          "aportado": 40,
+          "retirado": true,
+          "premio": 0,
+          "devuelto": 0
+        },
+        {
+          "asiento": 2,
+          "nombre": "Davidkim",
+          "posicion": "BTN",
+          "participando": true,
+          "perfil": "agresivo",
+          "cartas": [
+            "KD",
+            "6H"
+          ],
+          "fichas_iniciales": 9109,
+          "fichas_finales": 8969,
+          "aportado": 140,
+          "retirado": true,
+          "premio": 0,
+          "devuelto": 0
+        },
+        {
+          "asiento": 3,
+          "nombre": "Finwa22",
+          "posicion": "SB",
+          "participando": true,
+          "perfil": null,
+          "cartas": [
+            "5C",
+            "AC"
+          ],
+          "fichas_iniciales": 5370,
+          "fichas_finales": 5590,
+          "aportado": 240,
+          "retirado": false,
+          "premio": 360,
+          "devuelto": 100
+        },
+        {
+          "asiento": 4,
+          "nombre": "_Yurec0816",
+          "posicion": "BB",
+          "participando": true,
+          "perfil": "equilibrado",
+          "cartas": [
+            "9C",
+            "QC"
+          ],
+          "fichas_iniciales": 3500,
+          "fichas_finales": 3460,
+          "aportado": 40,
+          "retirado": true,
+          "premio": 0,
+          "devuelto": 0
+        },
+        {
+          "asiento": 5,
+          "nombre": "FAKEL382",
+          "posicion": "UTG",
+          "participando": true,
+          "perfil": "agresivo",
+          "cartas": [
+            "9H",
+            "7C"
+          ],
+          "fichas_iniciales": 10216,
+          "fichas_finales": 10216,
+          "aportado": 0,
+          "retirado": true,
+          "premio": 0,
+          "devuelto": 0
+        }
+      ],
+      "mesa": [],
+      "ciegas": [
+        {
+          "jugador": 3,
+          "cantidad": 20,
+          "tipo": "SB"
+        },
+        {
+          "jugador": 4,
+          "cantidad": 40,
+          "tipo": "BB"
+        }
+      ],
+      "acciones": [
+        {
+          "jugador": 5,
+          "fase": 0,
+          "accion": "fold",
+          "cantidad": 0,
+          "subidas_previas": 0,
+          "por_pagar": 40,
+          "podia_subir": true,
+          "bote_previo": 60,
+          "bote_despues": 60,
+          "total_calle": 0,
+          "fichas_restantes": 10216,
+          "all_in": false
+        },
+        {
+          "jugador": 0,
+          "fase": 0,
+          "accion": "fold",
+          "cantidad": 0,
+          "subidas_previas": 0,
+          "por_pagar": 40,
+          "podia_subir": true,
+          "bote_previo": 60,
+          "bote_despues": 60,
+          "total_calle": 0,
+          "fichas_restantes": 6960,
+          "all_in": false
+        },
+        {
+          "jugador": 1,
+          "fase": 0,
+          "accion": "call",
+          "cantidad": 40,
+          "subidas_previas": 0,
+          "por_pagar": 40,
+          "podia_subir": true,
+          "bote_previo": 60,
+          "bote_despues": 100,
+          "total_calle": 40,
+          "fichas_restantes": 7736,
+          "all_in": false
+        },
+        {
+          "jugador": 2,
+          "fase": 0,
+          "accion": "raise",
+          "cantidad": 140,
+          "subidas_previas": 0,
+          "por_pagar": 40,
+          "podia_subir": true,
+          "bote_previo": 100,
+          "bote_despues": 240,
+          "total_calle": 140,
+          "fichas_restantes": 8969,
+          "all_in": false
+        },
+        {
+          "jugador": 3,
+          "fase": 0,
+          "accion": "raise",
+          "cantidad": 220,
+          "subidas_previas": 1,
+          "por_pagar": 120,
+          "podia_subir": true,
+          "bote_previo": 240,
+          "bote_despues": 460,
+          "total_calle": 240,
+          "fichas_restantes": 5130,
+          "all_in": false
+        },
+        {
+          "jugador": 4,
+          "fase": 0,
+          "accion": "fold",
+          "cantidad": 0,
+          "subidas_previas": 2,
+          "por_pagar": 200,
+          "podia_subir": true,
+          "bote_previo": 460,
+          "bote_despues": 460,
+          "total_calle": 40,
+          "fichas_restantes": 3460,
+          "all_in": false
+        },
+        {
+          "jugador": 1,
+          "fase": 0,
+          "accion": "fold",
+          "cantidad": 0,
+          "subidas_previas": 2,
+          "por_pagar": 200,
+          "podia_subir": true,
+          "bote_previo": 460,
+          "bote_despues": 460,
+          "total_calle": 40,
+          "fichas_restantes": 7736,
+          "all_in": false
+        },
+        {
+          "jugador": 2,
+          "fase": 0,
+          "accion": "fold",
+          "cantidad": 0,
+          "subidas_previas": 2,
+          "por_pagar": 100,
+          "podia_subir": true,
+          "bote_previo": 460,
+          "bote_despues": 460,
+          "total_calle": 140,
+          "fichas_restantes": 8969,
+          "all_in": false
+        }
+      ],
+      "showdown": false,
+      "vieron_flop": [],
+      "botes": [
+        {
+          "cantidad": 160,
+          "ganadores": [
+            3
+          ]
+        },
+        {
+          "cantidad": 200,
+          "ganadores": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8025a0f8-3bba-4bc0-8e15-df9cf5d5658c",
+      "inicio": "2026-09-11T14:32:18.499376+00:00",
+      "fin": "2026-09-11T14:32:42.791445+00:00",
+      "heroe": 3,
+      "dealer": 3,
+      "sb": 20,
+      "bb": 40,
+      "jugadores": [
+        {
+          "asiento": 0,
+          "nombre": "peco246",
+          "posicion": "UTG",
+          "participando": true,
+          "perfil": "conservador",
+          "cartas": [
+            "7H",
+            "5C"
+          ],
+          "fichas_iniciales": 6960,
+          "fichas_finales": 6960,
+          "aportado": 0,
+          "retirado": true,
+          "premio": 0,
+          "devuelto": 0
+        },
+        {
+          "asiento": 1,
+          "nombre": "Breta232",
+          "posicion": "MP",
+          "participando": true,
+          "perfil": "pagador",
+          "cartas": [
+            "JS",
+            "8C"
+          ],
+          "fichas_iniciales": 7736,
+          "fichas_finales": 7696,
+          "aportado": 40,
+          "retirado": true,
+          "premio": 0,
+          "devuelto": 0
+        },
+        {
+          "asiento": 2,
+          "nombre": "Davidkim",
+          "posicion": "CO",
+          "participando": true,
+          "perfil": "agresivo",
+          "cartas": [
+            "8D",
+            "2D"
+          ],
+          "fichas_iniciales": 8969,
+          "fichas_finales": 8969,
+          "aportado": 0,
+          "retirado": true,
+          "premio": 0,
+          "devuelto": 0
+        },
+        {
+          "asiento": 3,
+          "nombre": "Finwa22",
+          "posicion": "BTN",
+          "participando": true,
+          "perfil": null,
+          "cartas": [
+            "3D",
+            "3H"
+          ],
+          "fichas_iniciales": 5590,
+          "fichas_finales": 6340,
+          "aportado": 5590,
+          "retirado": false,
+          "premio": 1440,
+          "devuelto": 4900
+        },
+        {
+          "asiento": 4,
+          "nombre": "_Yurec0816",
+          "posicion": "SB",
+          "participando": true,
+          "perfil": "equilibrado",
+          "cartas": [
+            "9S",
+            "2C"
+          ],
+          "fichas_iniciales": 3460,
+          "fichas_finales": 3440,
+          "aportado": 20,
+          "retirado": true,
+          "premio": 0,
+          "devuelto": 0
+        },
+        {
+          "asiento": 5,
+          "nombre": "FAKEL382",
+          "posicion": "BB",
+          "participando": true,
+          "perfil": "agresivo",
+          "cartas": [
+            "10H",
+            "JH"
+          ],
+          "fichas_iniciales": 10216,
+          "fichas_finales": 9526,
+          "aportado": 690,
+          "retirado": true,
+          "premio": 0,
+          "devuelto": 0
+        }
+      ],
+      "mesa": [
+        "10C",
+        "7C",
+        "QH",
+        "4S",
+        "5H"
+      ],
+      "ciegas": [
+        {
+          "jugador": 4,
+          "cantidad": 20,
+          "tipo": "SB"
+        },
+        {
+          "jugador": 5,
+          "cantidad": 40,
+          "tipo": "BB"
+        }
+      ],
+      "acciones": [
+        {
+          "jugador": 0,
+          "fase": 0,
+          "accion": "fold",
+          "cantidad": 0,
+          "subidas_previas": 0,
+          "por_pagar": 40,
+          "podia_subir": true,
+          "bote_previo": 60,
+          "bote_despues": 60,
+          "total_calle": 0,
+          "fichas_restantes": 6960,
+          "all_in": false
+        },
+        {
+          "jugador": 1,
+          "fase": 0,
+          "accion": "call",
+          "cantidad": 40,
+          "subidas_previas": 0,
+          "por_pagar": 40,
+          "podia_subir": true,
+          "bote_previo": 60,
+          "bote_despues": 100,
+          "total_calle": 40,
+          "fichas_restantes": 7696,
+          "all_in": false
+        },
+        {
+          "jugador": 2,
+          "fase": 0,
+          "accion": "fold",
+          "cantidad": 0,
+          "subidas_previas": 0,
+          "por_pagar": 40,
+          "podia_subir": true,
+          "bote_previo": 100,
+          "bote_despues": 100,
+          "total_calle": 0,
+          "fichas_restantes": 8969,
+          "all_in": false
+        },
+        {
+          "jugador": 3,
+          "fase": 0,
+          "accion": "raise",
+          "cantidad": 110,
+          "subidas_previas": 0,
+          "por_pagar": 40,
+          "podia_subir": true,
+          "bote_previo": 100,
+          "bote_despues": 210,
+          "total_calle": 110,
+          "fichas_restantes": 5480,
+          "all_in": false
+        },
+        {
+          "jugador": 4,
+          "fase": 0,
+          "accion": "fold",
+          "cantidad": 0,
+          "subidas_previas": 1,
+          "por_pagar": 90,
+          "podia_subir": true,
+          "bote_previo": 210,
+          "bote_despues": 210,
+          "total_calle": 20,
+          "fichas_restantes": 3440,
+          "all_in": false
+        },
+        {
+          "jugador": 5,
+          "fase": 0,
+          "accion": "raise",
+          "cantidad": 290,
+          "subidas_previas": 1,
+          "por_pagar": 70,
+          "podia_subir": true,
+          "bote_previo": 210,
+          "bote_despues": 500,
+          "total_calle": 330,
+          "fichas_restantes": 9886,
+          "all_in": false
+        },
+        {
+          "jugador": 1,
+          "fase": 0,
+          "accion": "fold",
+          "cantidad": 0,
+          "subidas_previas": 2,
+          "por_pagar": 290,
+          "podia_subir": true,
+          "bote_previo": 500,
+          "bote_despues": 500,
+          "total_calle": 40,
+          "fichas_restantes": 7696,
+          "all_in": false
+        },
+        {
+          "jugador": 3,
+          "fase": 0,
+          "accion": "call",
+          "cantidad": 220,
+          "subidas_previas": 2,
+          "por_pagar": 220,
+          "podia_subir": true,
+          "bote_previo": 500,
+          "bote_despues": 720,
+          "total_calle": 330,
+          "fichas_restantes": 5260,
+          "all_in": false
+        },
+        {
+          "jugador": 5,
+          "fase": 1,
+          "accion": "check",
+          "cantidad": 0,
+          "subidas_previas": 2,
+          "por_pagar": 0,
+          "podia_subir": true,
+          "bote_previo": 720,
+          "bote_despues": 720,
+          "total_calle": 0,
+          "fichas_restantes": 9886,
+          "all_in": false
+        },
+        {
+          "jugador": 3,
+          "fase": 1,
+          "accion": "check",
+          "cantidad": 0,
+          "subidas_previas": 2,
+          "por_pagar": 0,
+          "podia_subir": true,
+          "bote_previo": 720,
+          "bote_despues": 720,
+          "total_calle": 0,
+          "fichas_restantes": 5260,
+          "all_in": false
+        },
+        {
+          "jugador": 5,
+          "fase": 2,
+          "accion": "check",
+          "cantidad": 0,
+          "subidas_previas": 2,
+          "por_pagar": 0,
+          "podia_subir": true,
+          "bote_previo": 720,
+          "bote_despues": 720,
+          "total_calle": 0,
+          "fichas_restantes": 9886,
+          "all_in": false
+        },
+        {
+          "jugador": 3,
+          "fase": 2,
+          "accion": "raise",
+          "cantidad": 360,
+          "subidas_previas": 2,
+          "por_pagar": 0,
+          "podia_subir": true,
+          "bote_previo": 720,
+          "bote_despues": 1080,
+          "total_calle": 360,
+          "fichas_restantes": 4900,
+          "all_in": false
+        },
+        {
+          "jugador": 5,
+          "fase": 2,
+          "accion": "call",
+          "cantidad": 360,
+          "subidas_previas": 2,
+          "por_pagar": 360,
+          "podia_subir": true,
+          "bote_previo": 1080,
+          "bote_despues": 1440,
+          "total_calle": 360,
+          "fichas_restantes": 9526,
+          "all_in": false
+        },
+        {
+          "jugador": 5,
+          "fase": 3,
+          "accion": "check",
+          "cantidad": 0,
+          "subidas_previas": 2,
+          "por_pagar": 0,
+          "podia_subir": true,
+          "bote_previo": 1440,
+          "bote_despues": 1440,
+          "total_calle": 0,
+          "fichas_restantes": 9526,
+          "all_in": false
+        },
+        {
+          "jugador": 3,
+          "fase": 3,
+          "accion": "raise",
+          "cantidad": 4900,
+          "subidas_previas": 2,
+          "por_pagar": 0,
+          "podia_subir": true,
+          "bote_previo": 1440,
+          "bote_despues": 6340,
+          "total_calle": 4900,
+          "fichas_restantes": 0,
+          "all_in": true
+        },
+        {
+          "jugador": 5,
+          "fase": 3,
+          "accion": "fold",
+          "cantidad": 0,
+          "subidas_previas": 2,
+          "por_pagar": 4900,
+          "podia_subir": false,
+          "bote_previo": 6340,
+          "bote_despues": 6340,
+          "total_calle": 0,
+          "fichas_restantes": 9526,
+          "all_in": false
+        }
+      ],
+      "showdown": false,
+      "vieron_flop": [
+        3,
+        5
+      ],
+      "botes": [
+        {
+          "cantidad": 80,
+          "ganadores": [
+            3
+          ]
+        },
+        {
+          "cantidad": 60,
+          "ganadores": [
+            3
+          ]
+        },
+        {
+          "cantidad": 1300,
+          "ganadores": [
+            3
+          ]
+        }
+      ]
     }
   ],
-  "manos_totales": 15
+  "manos_totales": 19
 }
