@@ -1,0 +1,14 @@
+{
+    "manos_totales": 3777,
+    "veces_vpip": 1433,
+    "veces_pfr": 1009,
+    "veces_ats": 1294,
+    "veces_3bet": 683,
+    "veces_wtsd": 2378,
+    "veces_wsd": 1258,
+    "veces_wwsf": 1409,
+    "fold_preflop": 2284,
+    "fold_flop": 613,
+    "fold_turn": 577,
+    "fold_river": 377
+}
