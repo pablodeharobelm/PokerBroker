@@ -45,7 +45,7 @@ def crear_inicio(navegar):
     layout.addSpacing(28)
     grid = QGridLayout()
     grid.setSpacing(18)
-    opciones = [("Jugar", "mesa"), ("Amigos · Próximamente", None),
+    opciones = [("Jugar", "mesa"), ("Amigos · Prueba local", "online"),
                 ("Estadísticas", "stats"), ("Historial", "historial")]
     for i, (texto, destino) in enumerate(opciones):
         boton = QToolButton()

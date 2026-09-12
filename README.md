@@ -41,8 +41,9 @@ y [definiciones de PokerTracker](https://www.pokertracker.com/guides/PT3/general
 
 La aplicación abre en el menú Inicio, con accesos a la práctica, estadísticas
 y al historial. Salir de la mesa pausa los turnos automáticos locales; volver
-los reanuda. El acceso online está desactivado: el multijugador aún no está
-implementado. Los datos y la sesión se guardan en el equipo actual.
+los reanuda. «Amigos · Local» abre un prototipo multijugador para probar en
+este ordenador. El juego por Internet todavía no está disponible.
+Los datos de práctica y la sesión se guardan en el equipo actual.
 
 - `main.py`: construcción de la ventana y sus controles.
 - `control_mesa.py`: eventos de Qt, turnos automáticos de bots y actualización visual.
